@@ -16,6 +16,11 @@
 		D7DAA6681D9DB4FC00B8E449 /* MyDeezerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6671D9DB4FC00B8E449 /* MyDeezerTests.swift */; };
 		D7DAA6731D9DB4FC00B8E449 /* MyDeezerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6721D9DB4FC00B8E449 /* MyDeezerUITests.swift */; };
 		D7DAA6811D9DBF2A00B8E449 /* DeezerSDK in Resources */ = {isa = PBXBuildFile; fileRef = D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */; };
+		D7DAA6831D9DBF9900B8E449 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DAA6821D9DBF9900B8E449 /* CoreAudio.framework */; };
+		D7DAA6851D9DBFA300B8E449 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DAA6841D9DBFA300B8E449 /* AudioToolbox.framework */; };
+		D7DAA6871D9DBFB500B8E449 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DAA6861D9DBFB500B8E449 /* SystemConfiguration.framework */; };
+		D7DAA6891D9DBFD300B8E449 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DAA6881D9DBFD300B8E449 /* libicucore.tbd */; };
+		D7DAA68B1D9DBFDF00B8E449 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DAA68A1D9DBFDF00B8E449 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		D7DAA6721D9DB4FC00B8E449 /* MyDeezerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeezerUITests.swift; sourceTree = "<group>"; };
 		D7DAA6741D9DB4FC00B8E449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DeezerSDK; sourceTree = "<group>"; };
+		D7DAA6821D9DBF9900B8E449 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D7DAA6841D9DBFA300B8E449 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D7DAA6861D9DBFB500B8E449 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7DAA6881D9DBFD300B8E449 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		D7DAA68A1D9DBFDF00B8E449 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DAA68B1D9DBFDF00B8E449 /* MediaPlayer.framework in Frameworks */,
+				D7DAA6891D9DBFD300B8E449 /* libicucore.tbd in Frameworks */,
+				D7DAA6871D9DBFB500B8E449 /* SystemConfiguration.framework in Frameworks */,
+				D7DAA6851D9DBFA300B8E449 /* AudioToolbox.framework in Frameworks */,
+				D7DAA6831D9DBF9900B8E449 /* CoreAudio.framework in Frameworks */,
 				1C15734F109626DF3A37E819 /* Pods_MyDeezer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +162,11 @@
 		F622EA4C3A04F53FBF7EE55A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7DAA68A1D9DBFDF00B8E449 /* MediaPlayer.framework */,
+				D7DAA6881D9DBFD300B8E449 /* libicucore.tbd */,
+				D7DAA6861D9DBFB500B8E449 /* SystemConfiguration.framework */,
+				D7DAA6841D9DBFA300B8E449 /* AudioToolbox.framework */,
+				D7DAA6821D9DBF9900B8E449 /* CoreAudio.framework */,
 				6512D950AD530FE87269352F /* Pods_MyDeezer.framework */,
 			);
 			name = Frameworks;
@@ -499,6 +519,12 @@
 				DEVELOPMENT_TEAM = 86435S94F4;
 				INFOPLIST_FILE = MyDeezer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.deezer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -513,6 +539,12 @@
 				DEVELOPMENT_TEAM = 86435S94F4;
 				INFOPLIST_FILE = MyDeezer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.deezer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
