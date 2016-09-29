@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C15734F109626DF3A37E819 /* Pods_MyDeezer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512D950AD530FE87269352F /* Pods_MyDeezer.framework */; };
 		D7DAA6531D9DB4FC00B8E449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */; };
 		D7DAA6551D9DB4FC00B8E449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */; };
 		D7DAA6581D9DB4FC00B8E449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DAA6561D9DB4FC00B8E449 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		D7DAA65D1D9DB4FC00B8E449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DAA65B1D9DB4FC00B8E449 /* LaunchScreen.storyboard */; };
 		D7DAA6681D9DB4FC00B8E449 /* MyDeezerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6671D9DB4FC00B8E449 /* MyDeezerTests.swift */; };
 		D7DAA6731D9DB4FC00B8E449 /* MyDeezerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6721D9DB4FC00B8E449 /* MyDeezerUITests.swift */; };
+		D7DAA6811D9DBF2A00B8E449 /* DeezerSDK in Resources */ = {isa = PBXBuildFile; fileRef = D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F97F88CCEEDFA588405628A /* Pods-MyDeezer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeezer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeezer/Pods-MyDeezer.debug.xcconfig"; sourceTree = "<group>"; };
+		6512D950AD530FE87269352F /* Pods_MyDeezer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDeezer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA535B4D39222258CA9FCF25 /* Pods-MyDeezer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeezer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeezer/Pods-MyDeezer.release.xcconfig"; sourceTree = "<group>"; };
 		D7DAA64F1D9DB4FC00B8E449 /* MyDeezer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDeezer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		D7DAA66E1D9DB4FC00B8E449 /* MyDeezerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDeezerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DAA6721D9DB4FC00B8E449 /* MyDeezerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeezerUITests.swift; sourceTree = "<group>"; };
 		D7DAA6741D9DB4FC00B8E449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DeezerSDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C15734F109626DF3A37E819 /* Pods_MyDeezer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2577F6F87B80FA6A69864A5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F97F88CCEEDFA588405628A /* Pods-MyDeezer.debug.xcconfig */,
+				CA535B4D39222258CA9FCF25 /* Pods-MyDeezer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D7DAA6461D9DB4FC00B8E449 = {
 			isa = PBXGroup;
 			children = (
+				D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */,
 				D7DAA6511D9DB4FC00B8E449 /* MyDeezer */,
 				D7DAA6661D9DB4FC00B8E449 /* MyDeezerTests */,
 				D7DAA6711D9DB4FC00B8E449 /* MyDeezerUITests */,
 				D7DAA6501D9DB4FC00B8E449 /* Products */,
+				2577F6F87B80FA6A69864A5C /* Pods */,
+				F622EA4C3A04F53FBF7EE55A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +144,14 @@
 			path = MyDeezerUITests;
 			sourceTree = "<group>";
 		};
+		F622EA4C3A04F53FBF7EE55A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6512D950AD530FE87269352F /* Pods_MyDeezer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7DAA6771D9DB4FC00B8E449 /* Build configuration list for PBXNativeTarget "MyDeezer" */;
 			buildPhases = (
+				1BCDB54FCF4DD00CBCE6FFC6 /* [CP] Check Pods Manifest.lock */,
 				D7DAA64B1D9DB4FC00B8E449 /* Sources */,
 				D7DAA64C1D9DB4FC00B8E449 /* Frameworks */,
 				D7DAA64D1D9DB4FC00B8E449 /* Resources */,
+				770875D26409DFF511D6D513 /* [CP] Embed Pods Frameworks */,
+				917B068A81E73CBE96AFD398 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,17 +224,20 @@
 					D7DAA64E1D9DB4FC00B8E449 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 86435S94F4;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					D7DAA6621D9DB4FC00B8E449 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 86435S94F4;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D7DAA64E1D9DB4FC00B8E449;
 					};
 					D7DAA66D1D9DB4FC00B8E449 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 86435S94F4;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D7DAA64E1D9DB4FC00B8E449;
 					};
@@ -237,6 +270,7 @@
 			files = (
 				D7DAA65D1D9DB4FC00B8E449 /* LaunchScreen.storyboard in Resources */,
 				D7DAA65A1D9DB4FC00B8E449 /* Assets.xcassets in Resources */,
+				D7DAA6811D9DBF2A00B8E449 /* DeezerSDK in Resources */,
 				D7DAA6581D9DB4FC00B8E449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +290,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BCDB54FCF4DD00CBCE6FFC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		770875D26409DFF511D6D513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDeezer/Pods-MyDeezer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		917B068A81E73CBE96AFD398 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDeezer/Pods-MyDeezer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7DAA64B1D9DB4FC00B8E449 /* Sources */ = {
@@ -411,12 +493,13 @@
 		};
 		D7DAA6781D9DB4FC00B8E449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F97F88CCEEDFA588405628A /* Pods-MyDeezer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 86435S94F4;
 				INFOPLIST_FILE = MyDeezer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.deezer.MyDeezer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.deezer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,12 +507,13 @@
 		};
 		D7DAA6791D9DB4FC00B8E449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA535B4D39222258CA9FCF25 /* Pods-MyDeezer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 86435S94F4;
 				INFOPLIST_FILE = MyDeezer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.deezer.MyDeezer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.deezer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -512,6 +596,7 @@
 				D7DAA6791D9DB4FC00B8E449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7DAA67A1D9DB4FC00B8E449 /* Build configuration list for PBXNativeTarget "MyDeezerTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +605,7 @@
 				D7DAA67C1D9DB4FC00B8E449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7DAA67D1D9DB4FC00B8E449 /* Build configuration list for PBXNativeTarget "MyDeezerUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +614,7 @@
 				D7DAA67F1D9DB4FC00B8E449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
