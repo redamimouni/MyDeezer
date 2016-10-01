@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1C15734F109626DF3A37E819 /* Pods_MyDeezer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512D950AD530FE87269352F /* Pods_MyDeezer.framework */; };
+		D71E71CC1D9FF3A700FF7EF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71E71CB1D9FF3A700FF7EF9 /* Constants.swift */; };
+		D71E71D41D9FFCC600FF7EF9 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71E71D31D9FFCC600FF7EF9 /* libDeezer.a */; };
+		D71E71D91DA0062100FF7EF9 /* DZRResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D71E71D61DA0062100FF7EF9 /* DZRResources.bundle */; };
+		D71E71DA1DA0062100FF7EF9 /* include in Resources */ = {isa = PBXBuildFile; fileRef = D71E71D71DA0062100FF7EF9 /* include */; };
+		D71E71DB1DA0062100FF7EF9 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71E71D81DA0062100FF7EF9 /* libDeezer.a */; };
+		D71E71DD1DA0069700FF7EF9 /* DeezerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71E71DC1DA0069700FF7EF9 /* DeezerSession.swift */; };
 		D7DAA6531D9DB4FC00B8E449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */; };
 		D7DAA6551D9DB4FC00B8E449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */; };
 		D7DAA6581D9DB4FC00B8E449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DAA6561D9DB4FC00B8E449 /* Main.storyboard */; };
@@ -45,6 +51,14 @@
 		6512D950AD530FE87269352F /* Pods_MyDeezer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDeezer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA535B4D39222258CA9FCF25 /* Pods-MyDeezer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDeezer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDeezer/Pods-MyDeezer.release.xcconfig"; sourceTree = "<group>"; };
 		D71E708E1D9FCF0E00FF7EF9 /* MyDeezer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyDeezer-Bridging-Header.h"; path = "MyDeezer/MyDeezer-Bridging-Header.h"; sourceTree = "<group>"; };
+		D71E71CB1D9FF3A700FF7EF9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D71E71CD1D9FFA7000FF7EF9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D71E71CF1D9FFBAC00FF7EF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D71E71D31D9FFCC600FF7EF9 /* libDeezer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDeezer.a; path = DeezerSDK/libDeezer.a; sourceTree = "<group>"; };
+		D71E71D61DA0062100FF7EF9 /* DZRResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DZRResources.bundle; path = DeezerSDK/DZRResources.bundle; sourceTree = "<group>"; };
+		D71E71D71DA0062100FF7EF9 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = DeezerSDK/include; sourceTree = "<group>"; };
+		D71E71D81DA0062100FF7EF9 /* libDeezer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDeezer.a; path = DeezerSDK/libDeezer.a; sourceTree = "<group>"; };
+		D71E71DC1DA0069700FF7EF9 /* DeezerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeezerSession.swift; sourceTree = "<group>"; };
 		D7DAA64F1D9DB4FC00B8E449 /* MyDeezer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDeezer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +72,7 @@
 		D7DAA66E1D9DB4FC00B8E449 /* MyDeezerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDeezerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DAA6721D9DB4FC00B8E449 /* MyDeezerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeezerUITests.swift; sourceTree = "<group>"; };
 		D7DAA6741D9DB4FC00B8E449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DeezerSDK; sourceTree = "<group>"; };
+		D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DeezerSDK; path = /Users/Dev/Documents/MyDeezer/MyDeezer/DeezerSDK; sourceTree = "<absolute>"; };
 		D7DAA6821D9DBF9900B8E449 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		D7DAA6841D9DBFA300B8E449 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D7DAA6861D9DBFB500B8E449 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -71,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71E71DB1DA0062100FF7EF9 /* libDeezer.a in Frameworks */,
+				D71E71D41D9FFCC600FF7EF9 /* libDeezer.a in Frameworks */,
 				D7DAA68B1D9DBFDF00B8E449 /* MediaPlayer.framework in Frameworks */,
 				D7DAA6891D9DBFD300B8E449 /* libicucore.tbd in Frameworks */,
 				D7DAA6871D9DBFB500B8E449 /* SystemConfiguration.framework in Frameworks */,
@@ -106,11 +122,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D71E71D51DA0060F00FF7EF9 /* DeezerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D71E71D61DA0062100FF7EF9 /* DZRResources.bundle */,
+				D71E71D71DA0062100FF7EF9 /* include */,
+				D71E71D81DA0062100FF7EF9 /* libDeezer.a */,
+			);
+			name = DeezerSDK;
+			sourceTree = "<group>";
+		};
 		D7DAA6461D9DB4FC00B8E449 = {
 			isa = PBXGroup;
 			children = (
 				D71E708E1D9FCF0E00FF7EF9 /* MyDeezer-Bridging-Header.h */,
-				D7DAA6801D9DBF2A00B8E449 /* DeezerSDK */,
+				D71E71CB1D9FF3A700FF7EF9 /* Constants.swift */,
+				D71E71D51DA0060F00FF7EF9 /* DeezerSDK */,
 				D7DAA6511D9DB4FC00B8E449 /* MyDeezer */,
 				D7DAA6661D9DB4FC00B8E449 /* MyDeezerTests */,
 				D7DAA6711D9DB4FC00B8E449 /* MyDeezerUITests */,
@@ -135,6 +162,7 @@
 			children = (
 				D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */,
 				D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */,
+				D71E71DC1DA0069700FF7EF9 /* DeezerSession.swift */,
 				D7DAA6561D9DB4FC00B8E449 /* Main.storyboard */,
 				D7DAA6591D9DB4FC00B8E449 /* Assets.xcassets */,
 				D7DAA65B1D9DB4FC00B8E449 /* LaunchScreen.storyboard */,
@@ -164,6 +192,9 @@
 		F622EA4C3A04F53FBF7EE55A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D71E71D31D9FFCC600FF7EF9 /* libDeezer.a */,
+				D71E71CF1D9FFBAC00FF7EF9 /* Foundation.framework */,
+				D71E71CD1D9FFA7000FF7EF9 /* CoreFoundation.framework */,
 				D7DAA68A1D9DBFDF00B8E449 /* MediaPlayer.framework */,
 				D7DAA6881D9DBFD300B8E449 /* libicucore.tbd */,
 				D7DAA6861D9DBFB500B8E449 /* SystemConfiguration.framework */,
@@ -290,8 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71E71D91DA0062100FF7EF9 /* DZRResources.bundle in Resources */,
 				D7DAA65D1D9DB4FC00B8E449 /* LaunchScreen.storyboard in Resources */,
 				D7DAA65A1D9DB4FC00B8E449 /* Assets.xcassets in Resources */,
+				D71E71DA1DA0062100FF7EF9 /* include in Resources */,
 				D7DAA6811D9DBF2A00B8E449 /* DeezerSDK in Resources */,
 				D7DAA6581D9DB4FC00B8E449 /* Main.storyboard in Resources */,
 			);
@@ -367,7 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DAA6551D9DB4FC00B8E449 /* ViewController.swift in Sources */,
+				D71E71DD1DA0069700FF7EF9 /* DeezerSession.swift in Sources */,
 				D7DAA6531D9DB4FC00B8E449 /* AppDelegate.swift in Sources */,
+				D71E71CC1D9FF3A700FF7EF9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +564,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					DeezerSDK,
+					"$(PROJECT_DIR)/DeezerSDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -557,6 +593,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					DeezerSDK,
+					"$(PROJECT_DIR)/DeezerSDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
