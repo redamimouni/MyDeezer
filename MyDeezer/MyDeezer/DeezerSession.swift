@@ -27,7 +27,7 @@ class DeezerSession : NSObject, DeezerSessionDelegate{
         return sharedSession
     }
     
-    func connectToDeezerWith(permissions: String...) {
+    func connectToDeezerWith(permissions: [String]) {
         deezerConnect.authorize(permissions)
     }
     

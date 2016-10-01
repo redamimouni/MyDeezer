@@ -7,32 +7,30 @@
 //
 
 import UIKit
-import CoreFoundation
 
-class ViewController: UIViewController, DeezerSessionDelegate {
+class ViewController: UIViewController, DeezerSessionConnectionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let deezerConnect = DeezerConnect.init(appId: Constants.DeezerAPI.API_APP_ID, andDelegate: self)
-        DZRRequestManager.default().dzrConnect = deezerConnect
+        DeezerSession.sharedInstance.connectionDelegate = self
 
     }
     
     @IBAction func connectionBtnPushed(sender: UIButton){
-        var permissions: [String] = [DeezerConnectPermissionEmail, DeezerConnectPermissionBasicAccess, DeezerConnectPermissionOfflineAccess, DeezerConnectPermissionManageLibrary, DeezerConnectPermissionListeningHistory]
+        let permissions: [String] = [DeezerConnectPermissionEmail, DeezerConnectPermissionBasicAccess, DeezerConnectPermissionOfflineAccess, DeezerConnectPermissionManageLibrary, DeezerConnectPermissionListeningHistory]
+        DeezerSession.sharedInstance.connectToDeezerWith(permissions: permissions)
+    }
+    
+    func deezerSessionDidDisconnect() {
         
     }
     
-    func deezerDidLogin() {
+    func deezerSessionDidConnect() {
         
     }
     
-    func deezerDidNotLogin(_ cancelled: Bool) {
-        
-    }
-    
-    func deezerDidLogout() {
+    func deezerSessionConnectionDidFailWith(error: Error) {
         
     }
 
