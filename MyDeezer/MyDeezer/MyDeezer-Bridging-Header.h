@@ -9,7 +9,6 @@
 #ifndef MyDeezer_Bridging_Header_h
 #define MyDeezer_Bridging_Header_h
 
-#import "DezTest.h"
 #import "DeezerConnect.h"
 
 #endif /* MyDeezer_Bridging_Header_h */
