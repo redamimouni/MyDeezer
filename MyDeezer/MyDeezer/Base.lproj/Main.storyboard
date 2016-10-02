@@ -34,10 +34,41 @@
                             <constraint firstItem="tPP-Kl-RDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jby-w9-Ncq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="kPq-t2-hUa" kind="show" identifier="playlistSegue" id="xtT-71-waO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.875" y="103.52112676056338"/>
+        </scene>
+        <!--Play List View Controller-->
+        <scene sceneID="TaL-V3-tEA">
+            <objects>
+                <tableViewController id="kPq-t2-hUa" customClass="PlayListViewController" customModule="MyDeezer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yh8-U2-etG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zeu-5y-GKl">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zeu-5y-GKl" id="50k-gV-txe">
+                                    <frame key="frameInset" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kPq-t2-hUa" id="x44-qR-KEb"/>
+                            <outlet property="delegate" destination="kPq-t2-hUa" id="mPd-uH-LGF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9R2-0G-KrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="104"/>
         </scene>
     </scenes>
 </document>

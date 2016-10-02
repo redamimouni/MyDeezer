@@ -14,6 +14,7 @@
 		D71E71DA1DA0062100FF7EF9 /* include in Resources */ = {isa = PBXBuildFile; fileRef = D71E71D71DA0062100FF7EF9 /* include */; };
 		D71E71DB1DA0062100FF7EF9 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71E71D81DA0062100FF7EF9 /* libDeezer.a */; };
 		D71E71DD1DA0069700FF7EF9 /* DeezerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71E71DC1DA0069700FF7EF9 /* DeezerSession.swift */; };
+		D7347BBA1DA12DC5001EDE3C /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7347BB91DA12DC5001EDE3C /* PlayListViewController.swift */; };
 		D7DAA6531D9DB4FC00B8E449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */; };
 		D7DAA6551D9DB4FC00B8E449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */; };
 		D7DAA6581D9DB4FC00B8E449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DAA6561D9DB4FC00B8E449 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		D71E71D71DA0062100FF7EF9 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = DeezerSDK/include; sourceTree = "<group>"; };
 		D71E71D81DA0062100FF7EF9 /* libDeezer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDeezer.a; path = DeezerSDK/libDeezer.a; sourceTree = "<group>"; };
 		D71E71DC1DA0069700FF7EF9 /* DeezerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeezerSession.swift; sourceTree = "<group>"; };
+		D7347BB91DA12DC5001EDE3C /* PlayListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
 		D7DAA64F1D9DB4FC00B8E449 /* MyDeezer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDeezer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				D7DAA6521D9DB4FC00B8E449 /* AppDelegate.swift */,
 				D7DAA6541D9DB4FC00B8E449 /* ViewController.swift */,
 				D71E71DC1DA0069700FF7EF9 /* DeezerSession.swift */,
+				D7347BB91DA12DC5001EDE3C /* PlayListViewController.swift */,
 				D7DAA6561D9DB4FC00B8E449 /* Main.storyboard */,
 				D7DAA6591D9DB4FC00B8E449 /* Assets.xcassets */,
 				D7DAA65B1D9DB4FC00B8E449 /* LaunchScreen.storyboard */,
@@ -399,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7347BBA1DA12DC5001EDE3C /* PlayListViewController.swift in Sources */,
 				D7DAA6551D9DB4FC00B8E449 /* ViewController.swift in Sources */,
 				D71E71DD1DA0069700FF7EF9 /* DeezerSession.swift in Sources */,
 				D7DAA6531D9DB4FC00B8E449 /* AppDelegate.swift in Sources */,

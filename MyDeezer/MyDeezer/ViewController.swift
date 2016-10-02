@@ -27,7 +27,7 @@ class ViewController: UIViewController, DeezerSessionConnectionDelegate {
     }
     
     func deezerSessionDidConnect() {
-        
+        self.performSegue(withIdentifier: "playlistSegue", sender: nil)
     }
     
     func deezerSessionConnectionDidFailWith(error: Error) {

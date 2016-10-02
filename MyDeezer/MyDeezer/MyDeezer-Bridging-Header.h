@@ -12,5 +12,6 @@
 #import "DeezerConnect.h"
 #import "DZRRequestManager.h"
 #import "NSBundle+DZRBundle.h"
+#import "DZRUser.h" 
 
 #endif /* MyDeezer_Bridging_Header_h */
