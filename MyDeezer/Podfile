@@ -2,7 +2,7 @@ platform :ios, ‘9.0’
 use_frameworks!
 
 target 'MyDeezer' do
-    
+    pod 'MBProgressHUD'
     end
 
 workspace ‘MyDeezer.xcworkspace'
